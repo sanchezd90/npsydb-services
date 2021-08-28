@@ -1,0 +1,517 @@
+{
+    "Wisconsin Card Sorting Test norms": [],
+    "Wisconsin Card Sorting Test normative data": [],
+    "WCST norms": [],
+    "WCST normative data": [],
+    "Wisconsin Card Sorting Test": [
+        {
+            "id": "274",
+            "retrieved": 1630175385.743811,
+            "journal-title": "Brain Sciences",
+            "doi": "10.3390/brainsci11050529",
+            "title": "The Wisconsin Card Sorting Test: Split-Half Reliability Estimates for a Self-Administered Computerized Variant",
+            "date": {
+                "@pub-type": "epub",
+                "day": "21",
+                "month": "4",
+                "year": "2021"
+            },
+            "abstract": "Self-administered computerized assessment has the potential to increase the reach of neuropsychological assessment. The present study reports the first split-half reliability estimates for a self-administered computerized variant of the Wisconsin Card Sorting Test (WCST), which is considered as a gold standard for the neuropsychological assessment of executive functions. We analyzed data from a large sample of young volunteers ( = 375). Split-half reliability estimates for perseveration errors, set-loss errors, and inference errors were all above 0.90. Split-half reliability estimates for response time measures on switch and repeat trials exceeded 0.95. Our results indicated sufficient split-half reliability for a self-administered computerized WCST, paving the way for an advanced digital assessment of executive functions. We discuss potential effects of test formats, administration variants, and sample characteristics on split-half reliability.",
+            "keywords": [
+                "Wisconsin Card Sorting Test",
+                "executive functions",
+                "neuropsychological assessment",
+                "computerized assessment",
+                "reliability generalization",
+                "split-half reliability"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175387.483881,
+            "journal-title": "Brain Sciences",
+            "doi": "10.3390/brainsci10100699",
+            "title": "Assessment of Executive Function in Patients with Traumatic Brain Injury with the Wisconsin Card-Sorting Test",
+            "date": {
+                "@pub-type": "epub",
+                "day": "01",
+                "month": "10",
+                "year": "2020"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "executive function",
+                "traumatic brain injury",
+                "Wisconsin Card-Sorting Test"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175389.019048,
+            "journal-title": "Assessment",
+            "doi": "10.1177/1073191119866257",
+            "title": "The Reliability of the Wisconsin Card Sorting Test in Clinical Practice",
+            "date": {
+                "@pub-type": "epub",
+                "day": "2",
+                "month": "8",
+                "year": "2019"
+            },
+            "abstract": "The Wisconsin Card Sorting Test (WCST) represents the gold standard for the neuropsychological assessment of executive function. However, very little is known about its reliability. In the current study, 146 neurological inpatients received the Modified WCST (M-WCST). Four basic measures (number of correct sorts, categories, perseverative errors, set-loss errors) and their composites were evaluated for split-half reliability. The reliability estimates of the number of correct sorts, categories, and perseverative errors fell into the desirable range ( \u2265 .90). The study therefore disclosed sufficiently reliable M-WCST measures, fostering the application of this eminent psychological test to neuropsychological assessment. Our data also revealed that the M-WCST possesses substantially better psychometric properties than would be expected from previous studies of WCST test-retest reliabilities obtained from non-patient samples. Our study of split-half reliabilities from discretionary construed and from randomly built M-WCST splits exemplifies a novel approach to the psychometric foundation of neuropsychology.",
+            "keywords": [
+                "Wisconsin Card Sorting Test",
+                "reliability",
+                "split-half reliability",
+                "test-retest reliability",
+                "reliability generalization"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175389.806178,
+            "journal-title": "European child & adolescent psychiatry",
+            "doi": "10.1007/s00787-019-01350-4",
+            "title": "Performance and brain activity during the Wisconsin Card Sorting Test in adolescents with obsessive-compulsive disorder and adolescents with weight-restored anorexia nervosa",
+            "date": {
+                "@pub-type": "nihms-submitted",
+                "day": "22",
+                "month": "5",
+                "year": "2019"
+            },
+            "abstract": "Anorexia nervosa (AN) and obsessive-compulsive disorder (OCD) both show a peak age of onset during adolescence and share a number of phenotypic features, such as rigid rule-bound behavior and perseverative thinking. There is evidence of difficulties with set shifting or task switching in adults with each disorder, but evidence in adolescents is limited. Further, no studies have previously directly compared AN and OCD on this cognitive process or examined comparative neural correlates. This study provides exploratory analyses to address this gap by measuring brain activity with functional magnetic resonance imaging (fMRI) during a computerized version of the Wisconsin Card Sorting Test (WCST) in female adolescents with weight-restored AN (WR-AN) (n=14), OCD (n=11) and healthy controls (n=24). Results revealed greater perseverative errors in the OCD group than healthy controls and WR-AN, but no difference between WR-AN and healthy controls. Greater activity in the right front pole, inferior frontal gyrus, and middle frontal gyrus during the task (compared to a control matching task) was associated with more perseverative errors in the OCD group, but not healthy controls. The correlation between perseverative errors and brain response to th task in the WR-AN group was not different from either comparison group. These findings propose an hypothesis that behavioral similarities between OCD and AN, as well as difficulties with set shifting in adults with AN, are driven by obsessive-compulsive features present in AN rather than a shared underlying neurocognitive signature. This notion should be tested in larger samples in future studies.",
+            "keywords": [
+                "obsessive compulsive disorder",
+                "anorexia nervosa",
+                "Wisconsin Card Sorting Test",
+                "set shifting",
+                "cognitive flexibility",
+                "adolescents"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175391.038816,
+            "journal-title": "Nature Communications",
+            "doi": "10.1038/s41467-018-07912-5",
+            "title": "Model-based lesion mapping of cognitive control using the Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "epub",
+                "day": "3",
+                "month": "1",
+                "year": "2019"
+            },
+            "abstract": "notFound",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175392.461345,
+            "journal-title": "PeerJ",
+            "doi": "10.7717/peerj.5890",
+            "title": "Hemodynamic effects of sex and handedness on the Wisconsin Card Sorting Test: the contradiction between neuroimaging and behavioural results",
+            "date": {
+                "@pub-type": "epub",
+                "@date-type": "pub",
+                "@iso-8601-date": "2018-11-21",
+                "day": "21",
+                "month": "11",
+                "year": {
+                    "@iso-8601-date": "2018",
+                    "#text": "2018"
+                }
+            },
+            "abstract": "This study investigated the potential role of sex and handedness on the performance of a computerised Wisconsin Card Sorting Test (WCST) in healthy participants by applying functional near-infrared spectroscopy (fNIRS). We demonstrated significant ( < 0.05) sex-related differences of hemodynamic response in the prefrontal cortex of 70 healthy participants (female,  = 35 and male,  = 35; right-handed,  = 40 and left-handed,  = 30). In contrast, behavioural results of the WCST do not show sex bias, which is consistent with previous literature. Because of this, we compared ours and sparse previous fNIRS studies on the WCST. We propose that, according to recent studies of neurovascular coupling, this contradiction between neuroimaging and behavioural results may be explained by normal variability in neurovascular dynamics.",
+            "keywords": [
+                "Sex",
+                "Prefrontal cortex",
+                "Handedness",
+                "WCST",
+                "fNIRS",
+                "Gender",
+                "Hemodynamics",
+                "Neurovasculature",
+                "Near-infrared spectroscopy"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175393.613054,
+            "journal-title": "PLoS ONE",
+            "doi": "10.1371/journal.pone.0202099",
+            "title": "Performance of Wisconsin Card Sorting Test in five-year-old children in Taiwan: Relationship to intelligence and cognitive development",
+            "date": {
+                "@pub-type": "epub",
+                "day": "30",
+                "month": "8",
+                "year": "2018"
+            },
+            "abstract": "notFound",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175394.454848,
+            "journal-title": "American journal of medical genetics. Part B, Neuropsychiatric genetics : the official publication of the International Society of Psychiatric Genetics",
+            "doi": "10.1002/ajmg.b.32642",
+            "title": "Genome-wide association study of cognitive flexibility assessed by the Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "nihms-submitted",
+                "day": "2",
+                "month": "5",
+                "year": "2018"
+            },
+            "abstract": "Cognitive flexibility is a critical component of executive function and is strongly influenced by genetic factors. We conducted a genome-wide association study of cognitive flexibility (as measured by perseverative errors on the Wisconsin Card Sorting Test) in two sets of African American (AA) and European American (EA) subjects (Yale-Penn-1: 1,411 AAs/949 EAs; Yale-Penn-2: 1,178 AAs/1,335 EAs). We examined the association of cognitive flexibility with genotyped or imputed SNPs across the genome. In AAs, two correlated common SNPs (rs7165213/rs35633795) in the downstream region of the noncoding gene  on chromosome 15 showed genome-wide significant (GWS) associations with cognitive flexibility (Yale-Penn-1:  = 6.0\u00d710/1.3\u00d710; Yale-Penn-2:  = 0.029/0.010; meta-analysis:  = 4.2\u00d710/1.0\u00d710) in the same effect direction. In EAs, no GWS associations were observed. Enriched gene sets identified by DEPICT analysis of the top SNPs ( < 10) included the signalosome and ubiquitin specific peptidase 9, X-linked (USP9X) subnetwork in AAs, and abnormal frontal and occipital bone morphology in EAs. We also performed polygenic risk score (PRS) analysis to examine the genetic correlation of cognition-proxy phenotypes (general cognitive function, education attainment, childhood intelligence, and infant head circumference) and cognitive flexibility in EAs. The PRS derived from general cognitive function-associated SNPs was significantly associated with cognitive flexibility. Non-genetic factors (age, education, sex, and tobacco recency) also exerted significant effects on cognitive flexibility. Our study demonstrates that both genetic and non-genetic factors impact cognitive flexibility, and variants in genes involved in protein degradation and brain development may contribute to population variation in cognitive function.",
+            "keywords": [
+                "cognitive flexibility",
+                "Wisconsin Card Sorting Test",
+                "genome-wide association study",
+                "enrichment analysis",
+                "polygenic risk score"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175395.669206,
+            "journal-title": "Frontiers in Psychology",
+            "doi": "10.3389/fpsyg.2018.00057",
+            "title": "Electrophysiological Response to the Informative Value of Feedback Revealed in a Segmented Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "epub",
+                "day": "05",
+                "month": "2",
+                "year": "2018"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "feedback",
+                "rule acquisition",
+                "informative value",
+                "valence",
+                "P300"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175396.668926,
+            "journal-title": "Indian Journal of Psychiatry",
+            "doi": "10.4103/psychiatry.IndianJPsychiatry_31_18",
+            "title": "Wisconsin card sorting test performance impairment in schizophrenia: Flaws in a report",
+            "date": "notFound",
+            "abstract": "notFound",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175397.522943,
+            "journal-title": "Neuropsychologia",
+            "doi": "10.1016/j.neuropsychologia.2017.05.027",
+            "title": "Cognitive persistence: Development and validation of a novel measure from the Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "nihms-submitted",
+                "day": "17",
+                "month": "6",
+                "year": "2017"
+            },
+            "abstract": "The Wisconsin Card Sorting Test (WCST) has long been used as a neuropsychological assessment of executive function abilities, in particular, cognitive flexibility or \u201cset-shifting.\u201d Recent advances in scoring the task have helped to isolate specific WCST performance metrics that index set-shifting abilities and have improved our understanding of how prefrontal and parietal cortex contribute to set-shifting. We present evidence that the ability to overcome task difficulty to achieve a goal, or \u201ccognitive persistence,\u201d is another important prefrontal function that is characterized by the WCST and that can be differentiated from efficient set-shifting. This novel measure of cognitive persistence was developed using the WCST-64 in an adult lifespan sample of 230 participants. The measure was validated using individual variation in cingulo-opercular cortex function in a sub-sample of older adults who had completed a challenging speech recognition in noise fMRI task. Specifically, older adults with higher cognitive persistence were more likely to demonstrate word recognition benefit from cingulo-opercular activity. The WCST-derived cognitive persistence measure can be used to disentangle neural processes involved in set-shifting from those involved in persistence.",
+            "keywords": [
+                "Persistence",
+                "Set-shifting",
+                "Wisconsin Card Sorting Test",
+                "Speech recognition",
+                "Prefrontal cortex"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175398.566312,
+            "journal-title": "Scientific Reports",
+            "doi": "10.1038/s41598-017-00448-6",
+            "title": "Combination of Electroencephalography and Near-Infrared Spectroscopy in Evaluation of Mental Concentration during the Mental Focus Task for Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "epub",
+                "day": "23",
+                "month": "3",
+                "year": "2017"
+            },
+            "abstract": "notFound",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175399.471502,
+            "journal-title": "Schizophrenia Bulletin",
+            "doi": "10.1093/schbul/sbx023.028",
+            "title": "SA29. Executive Functioning Success: Exploring the Factor Structure of Successful Completion of the Wisconsin Card Sorting Test in Schizophrenia",
+            "date": {
+                "@pub-type": "ppub",
+                "month": "3",
+                "year": "2017"
+            },
+            "abstract": "notFound",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175400.618708,
+            "journal-title": "Neuropsychologia",
+            "doi": "10.1016/j.neuropsychologia.2016.11.015",
+            "title": "Transcranial magnetic stimulation to dorsolateral prefrontal cortex affects conflict-induced behavioural adaptation in a Wisconsin Card Sorting Test analogue",
+            "date": {
+                "@pub-type": "pmc-release",
+                "day": "08",
+                "month": "1",
+                "year": "2017"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "Transcranial magnetic stimulation",
+                "Dorsolateral prefrontal cortex",
+                "Conflict-monitoring",
+                "Behavioural adaptation",
+                "Wisconsin Card Sorting Test"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175401.693072,
+            "journal-title": "Indian Journal of Psychiatry",
+            "doi": "10.4103/0019-5545.204440",
+            "title": "Wisconsin Card Sorting Test performance impairment in schizophrenia: An Indian study report",
+            "date": "notFound",
+            "abstract": "notFound",
+            "keywords": [
+                "Cognitive deficit",
+                "negative symptom",
+                "positive symptom",
+                "schizophrenia",
+                "Wisconsin Card Sorting Test"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175403.228255,
+            "journal-title": "Frontiers in Psychology",
+            "doi": "10.3389/fpsyg.2016.00238",
+            "title": "Forest, Trees, Dynamics: Results from a Novel Wisconsin Card Sorting Test Variant Protocol for Studying Global-Local Attention and Complex Cognitive Processes",
+            "date": {
+                "@pub-type": "epub",
+                "day": "23",
+                "month": "2",
+                "year": "2016"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "attention",
+                "complex cognition",
+                "global-local processing",
+                "forced choice task",
+                "response time analysis",
+                "double filtering by frequency",
+                "object file theory",
+                "Wisconsin Card Sorting Test"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175404.321415,
+            "journal-title": "Frontiers in Psychology",
+            "doi": "10.3389/fpsyg.2016.00017",
+            "title": "Investigation of Biases and Compensatory Strategies Using a Probabilistic Variant of the Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "epub",
+                "day": "22",
+                "month": "1",
+                "year": "2016"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "decision-making",
+                "Wisconsin Card Sorting Test",
+                "cognitive biases",
+                "probability matching",
+                "uncertainty"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175406.493195,
+            "journal-title": "PLoS ONE",
+            "doi": "10.1371/journal.pone.0140731",
+            "title": "Brain Activation of Negative Feedback in Rule Acquisition Revealed in a Segmented Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "epub",
+                "day": "15",
+                "month": "10",
+                "year": "2015"
+            },
+            "abstract": "notFound",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175409.279368,
+            "journal-title": "Physiological Reports",
+            "doi": "10.14814/phy2.12390",
+            "title": "Age effects on EEG correlates of the Wisconsin Card Sorting Test",
+            "date": {
+                "@pub-type": "collection",
+                "month": "7",
+                "year": "2015"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "Aging",
+                "cognition",
+                "EEG rhythms"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175411.275068,
+            "journal-title": "Dementia & Neuropsychologia",
+            "doi": "10.1590/1980-57642015DN92000006",
+            "title": "Brazilian preliminary norms and investigation of age and education\neffects on the Modified Wisconsin Card Sorting Test, Stroop Color and Word test\nand Digit Span test in adults",
+            "date": {
+                "@pub-type": "epub-ppub",
+                "season": "Apr-Jun",
+                "year": "2015"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "cognition",
+                "neuropsychological tests",
+                "age",
+                "schooling",
+                "executive function"
+            ]
+        }
+    ],
+    "WCST": [
+        {
+            "id": "274",
+            "retrieved": 1630175412.822797,
+            "journal-title": "Schizophrenia Bulletin",
+            "doi": "10.1093/schbul/sby016.351",
+            "title": "T75. GENERAL AND EXECUTIVE COGNITIVE PROFILES: GENERAL COGNITIONS INFLUENCE ON WCST PERFORMANCE",
+            "date": {
+                "@pub-type": "ppub",
+                "month": "4",
+                "year": "2018"
+            },
+            "abstract": "notFound",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175414.980243,
+            "journal-title": "Frontiers in Psychology",
+            "doi": "10.3389/fpsyg.2017.00793",
+            "title": "Poor Executive Functions among Children with Moderate-into-Severe Asthma: Evidence from WCST Performance",
+            "date": {
+                "@pub-type": "epub",
+                "day": "16",
+                "month": "5",
+                "year": "2017"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "asthma",
+                "learning disabilities",
+                "executive functions",
+                "WCST",
+                "learning skills"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175416.11563,
+            "journal-title": "ISRN Psychiatry",
+            "doi": "10.5402/2012/373748",
+            "title": "WCST Performance in Schizophrenia and Severe Depression with Psychotic Features",
+            "date": {
+                "@pub-type": "collection",
+                "year": "2012"
+            },
+            "abstract": ". Differentiating between schizophrenia and major depression with psychotic features often reveals diagnostic dilemma. Both share psychotic features and severe impairment in occupational functions. Severe psychomotor retardation, not uncommon in psychotic depression, may simulate negative symptoms of schizophrenia. Our work aims at utilizing Wisconsin Card Sorting Test (WCST) performance as a potential differentiating neurocognitive tool. . 60 patients were recruited randomly from the outpatient service at Alexandria University Hospital: 30 patients with schizophrenia and 30 patients with chronic psychotic depression. They were subjected to Clinical Global Impression for Severity (CGI-S) scale and Wisconsin Card Sorting Test (WCST) 128 card computerized version. . Both groups were balanced in terms of gender distribution, severity and duration of illness. The study compared all parameters of WCST. Only perseverative errors showed mild significant difference ( < 0.05) that disappeared when applying Bonferroni adaptation, setting significance level at 0.01 instead of 0.05. . Performance on WCST is similar in schizophrenia and severe depression with psychotic features in most of the measured parameters and hence could not serve as a supplementary tool differentiating between both diagnoses in our study.",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175417.242325,
+            "journal-title": "Iranian Journal of Psychiatry and Behavioral Sciences",
+            "title": "Emotional Intelligence and Prefrontal Cortex: a Comparative Study Based on Wisconsin Card Sorting Test (WCST)",
+            "date": "notFound",
+            "abstract": "notFound",
+            "keywords": [
+                "Emotional intelligence (EI)",
+                "Prefrontal cortex (PFC)",
+                "Wisconsin Card Sorting Test (WCST)"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175418.105968,
+            "journal-title": "notFound",
+            "doi": "10.1016/j.neulet.2010.01.067",
+            "title": "Developmental and genetic influences on prefrontal function in adolescents: a longitudinal twin study of WCST performance",
+            "date": {
+                "@pub-type": "nihms-submitted",
+                "day": "15",
+                "month": "3",
+                "year": "2010"
+            },
+            "abstract": "Adolescence is characterized by a relative immaturity of the prefrontal cortex and associated cognitive control functions, which is hypothesized to be a major contributing factor to high risk behaviors. However, little is known about the role of genetic and environmental factors in frontal brain development during adolescence. Here we examined heritability of performance on the Wisconsin Card Sorting Test (WCST), an established neuropsychological measure of prefrontally-mediated executive functioning, in a longitudinal sample of adolescent twins (n=747) tested at ages 12 and 14. WSCT performance significant improved with age as indicated by a decrease in the number of perseverative errors (P<.001), which was paralleled by an increase in heritability in females (19% at age 12 and 49% at age 14) and shared environmental influences in males (non-significant at age 12 and 34% at age 14). The results suggest increasing influence of familial factors on frontal executive functioning during adolescence, as well as gender differences in the relative role of genetic and environmental factors.",
+            "keywords": "notFound"
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175418.88346,
+            "journal-title": "notFound",
+            "doi": "10.1016/j.psychres.2008.05.013",
+            "title": "It's all in the cards: effect of stimulus manipulation on WCST performance in schizophrenia",
+            "date": {
+                "@pub-type": "nihms-submitted",
+                "day": "15",
+                "month": "7",
+                "year": "2009"
+            },
+            "abstract": "Patients with schizophrenia can be taught the Wisconsin Card Sorting Test (WCST) sorting rules based upon expanded feedback. However, few task manipulations have been reported that differentially improve patient performance without altering the nature of feedback provided. The present study tests the hypothesis that deficits in WCST performance in schizophrenia reflect, in part, impaired ability to manipulate abstract stimulus features, rather than impaired ability to utilize feedback. We developed a modified stimulus set \u2013 the Rockland Face Sorting Test (RFST) \u2013 in which abstract shapes were replaced with faces, which we hypothesized would be more tractable to sorting by patients. Task rules and feedback remained unchanged. Relative RFST and WCST performance was examined in 19 patients as well as 15 normative controls. A comparison group of 15 patients received only repeated WCST administrations. Patients performed significantly better on the RFST vs. the WCST in categories completed, total correct responses and conceptual level responses, whereas no improvement was seen in either the normative or repeated WCST comparison groups. Furthermore, progressive improvement was seen following repeated RFST administration. These findings demonstrate that stimulus characteristics, as well as executive deficits, contribute to impaired WCST performance in schizophrenia.",
+            "keywords": [
+                "Wisconsin Card Sorting Test (WCST)",
+                "cognitive remediation",
+                "executive functioning",
+                "schizophrenia"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175420.326841,
+            "journal-title": "Dementia & Neuropsychologia",
+            "doi": "10.1590/s1980-57642008dn10200011",
+            "title": "Typical performance of elderlypatients with Alzheimer disease on the\nWisconsin Card Sorting Test (WCST)",
+            "date": {
+                "@pub-type": "epub-ppub",
+                "season": "Apr-Jun",
+                "year": "2007"
+            },
+            "abstract": "notFound",
+            "keywords": [
+                "Alzheimer's disease",
+                "neuropsychological assessment",
+                "Wisconsin Card Sorting Test",
+                "executive functions",
+                "memory disorder",
+                "elderly people"
+            ]
+        },
+        {
+            "id": "274",
+            "retrieved": 1630175421.373753,
+            "journal-title": "notFound",
+            "title": "Performance of patients with schizophrenia on the Wisconsin Card Sorting Test (WCST).",
+            "date": "notFound",
+            "abstract": "notFound",
+            "keywords": "notFound"
+        }
+    ]
+}
