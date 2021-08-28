@@ -26,49 +26,52 @@ class NpsyScrapper():
             content=json.dumps(mainContent,indent=4)
             f.write(content)
     
+    def cleanFile(self,file):
+        with open(file,"r",encoding="utf-8") as f:
+            content=f.read()
+            entries=json.loads(content)
+        for k,v in entries.items():
+            if len(v)==0:
+                del entries[k]
+        with open(file,"w",encoding="utf-8") as f:
+            entries=json.dumps(content,indent=4)
+            f.write(entries)
+
     #--Query management--#
-    def basicQuery(self,source,destination,idRange,sleep,*args):
+    def basicQuery(self,source,destination,idRange,sleep,includeRoot,*args):
         if type(idRange)!=list:
-            idRange=[idRange,idRange+1]
-        print(type(idRange))
+            idRange=[idRange,idRange+1]        
         with open(source,"r",encoding="utf-8") as f:
             content=f.read()
             pruebas=json.loads(content)
         with open(destination,"r",encoding="utf-8") as f:
             content=f.read()
             results=json.loads(content)
-        for id in range(int(idRange[0]),int(idRange[1])):
-            print(id)
-            for prueba in pruebas:
-                print(prueba)
+        for id in range(int(idRange[0]),int(idRange[1])):            
+            for prueba in pruebas:                
                 if prueba['id']==str(id):
+                    print(id)
+                    print(prueba)
                     for arg in args:
                         s=Search(f"{prueba['nombre_principal']} {arg}","title","npsydb","sanchezd90@gmail.com")                    
                         if f"{prueba['nombre_principal']} {arg}" in results:                                                        
                             results[f"{prueba['nombre_principal']} {arg}"].append(s.getData(id,"all"))
                         else:
-                            results[f"{prueba['nombre_principal']} {arg}"]=s.getData(id,"all")
-                    for arg in args:
-                        s=Search(f"{prueba['acronym']} {arg}","title","npsydb","sanchezd90@gmail.com")                    
-                        if f"{prueba['acronym']} {arg}" in results:
-                            results[f"{prueba['acronym']} {arg}"].append(s.getData(id,"all"))
-                        else:
-                            results[f"{prueba['acronym']} {arg}"]=s.getData(id,"all")
+                            results[f"{prueba['nombre_principal']} {arg}"]=s.getData(id,"all")                    
                     s=Search(f"{prueba['nombre_principal']}","title","npsydb","sanchezd90@gmail.com")                
-                    if f"{prueba['nombre_principal']}" in results:
-                        results[f"{prueba['nombre_principal']}"].append(s.getData(id,"all"))
-                    else:
-                        results[f"{prueba['nombre_principal']}"]=s.getData(id,"all")
-                    s=Search(f"{prueba['acronym']}","title","npsydb","sanchezd90@gmail.com")                
-                    if f"{prueba['acronym']}" in results:
-                        results[f"{prueba['nombre_principal']}"].append(s.getData(id,"all"))
-                    else:
-                        results[f"{prueba['nombre_principal']}"]=s.getData(id,"all")
+                    if includeRoot:
+                        if f"{prueba['nombre_principal']}" in results:
+                            results[f"{prueba['nombre_principal']}"].append(s.getData(id,"all"))
+                        else:
+                            results[f"{prueba['nombre_principal']}"]=s.getData(id,"all")                        
             print("Time to sleep")
             time.sleep(sleep)
+            print("Back to work")
         with open(destination,"w",encoding="utf-8") as f:
             content=json.dumps(results,indent=4)
             f.write(content)
 
 n=NpsyScrapper()
-n.basicQuery("pruebas.json","results.json",["239","240"],60,"norms","normative data")
+#n.basicQuery("pruebas.json","new.json",["239","347"],1,True,"norms","normative data","validity")
+
+
