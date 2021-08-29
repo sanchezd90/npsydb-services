@@ -30,12 +30,26 @@ class NpsyScrapper():
         with open(file,"r",encoding="utf-8") as f:
             content=f.read()
             entries=json.loads(content)
+        newDict={}
         for k,v in entries.items():
-            if len(v)==0:
-                del entries[k]
+            if len(v)>0:
+                newDict.update({k:v})
+        print(len(newDict))
         with open(file,"w",encoding="utf-8") as f:
-            entries=json.dumps(content,indent=4)
-            f.write(entries)
+            doc=json.dumps(newDict,indent=4)
+            f.write(doc)
+
+    #--Stats--#
+    def count(self,file):
+        with open(file,"r",encoding="utf-8") as f:
+            content=f.read()
+            entries=json.loads(content)
+        for k,v in entries.items():
+            print(f"{k}: {len(v)}")
+            if len(v)==20:
+                for x in entries[k]:
+                    print(x['date'])
+
 
     #--Query management--#
     def basicQuery(self,source,destination,idRange,sleep,includeRoot,*args):
@@ -73,5 +87,5 @@ class NpsyScrapper():
 
 n=NpsyScrapper()
 #n.basicQuery("pruebas.json","new.json",["239","347"],1,True,"norms","normative data","validity")
-
+n.count("results.json")
 
