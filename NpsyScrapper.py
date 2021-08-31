@@ -110,8 +110,10 @@ class NpsyScrapper():
         queryList=self.formerFromNumerous(file)
         for x in queryList:            
             s=Search(x[0],"title",["PublicationDate",x[3].strftime("%Y/%m/%d"),x[2].strftime("%Y/%m/%d")])
-            try:
-                results[x[0]].append(s.getData(x[1],"all"))
+            try:                
+                document=s.getData(x[1],"all")
+                for element in document:
+                    results[x[0]].append(element)
             except Exception as e:
                 print("Error while searching for ",x[0]," : ",e)                                                  
         with open(file,"w",encoding="utf-8") as f:
