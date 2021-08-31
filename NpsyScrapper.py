@@ -1,6 +1,7 @@
 from PmcQuery import Search,Fetch
 import json
 import time
+import datetime
 
 class NpsyScrapper():
           
@@ -46,10 +47,28 @@ class NpsyScrapper():
             entries=json.loads(content)
         for k,v in entries.items():
             print(f"{k}: {len(v)}")
-            if len(v)==20:
-                for x in entries[k]:
-                    print(x['date'])
-
+    def formerFromNumerous(self,file):
+        excededDict={}
+        formerList=[]
+        with open(file,"r",encoding="utf-8") as f:
+            content=f.read()
+            entries=json.loads(content)
+        for k,v in entries.items():            
+            if len(v)>19:
+                for x in entries[k]:                    
+                    try:
+                        dateObj=datetime.datetime(int(x['date']['year']),int(x['date']['month']),int(x['date']['day']))                        
+                        if(k in excededDict):
+                            excededDict[k]['dates'].append(dateObj)
+                        else:                            
+                            excededDict[k]={"id":x['id'],"dates":[dateObj]}                            
+                    except Exception as e:
+                        pass
+        for k in excededDict:
+            excededDict[k]["dates"].sort()
+            d=excededDict[k]["dates"][0]
+            formerList.append((k,excededDict[k]["id"],d,datetime.datetime(d.year-10, d.month, d.day, d.hour, d.minute, d.second, d.microsecond, d.tzinfo)))         
+        return formerList
 
     #--Query management--#
     def basicQuery(self,source,destination,idRange,sleep,includeRoot,*args):
@@ -84,8 +103,20 @@ class NpsyScrapper():
         with open(destination,"w",encoding="utf-8") as f:
             content=json.dumps(results,indent=4)
             f.write(content)
+    def expandQuery(self,file):
+        with open(file,"r",encoding="utf-8") as f:
+            content=f.read()
+            results=json.loads(content)
+        queryList=self.formerFromNumerous(file)
+        for x in queryList:            
+            s=Search(x[0],"title",["PublicationDate",x[3].strftime("%Y/%m/%d"),x[2].strftime("%Y/%m/%d")])
+            try:
+                results[x[0]].append(s.getData(x[1],"all"))
+            except Exception as e:
+                print("Error while searching for ",x[0]," : ",e)                                                  
+        with open(file,"w",encoding="utf-8") as f:
+            content=json.dumps(results,indent=4)
+            f.write(content)
 
-n=NpsyScrapper()
-#n.basicQuery("pruebas.json","new.json",["239","347"],1,True,"norms","normative data","validity")
-n.count("results.json")
+
 

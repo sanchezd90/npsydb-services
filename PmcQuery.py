@@ -6,19 +6,25 @@ from datetime import datetime
 
 class Search():
     
-    def __init__(self,term,field="title",tool="my_tool",email="my_email@example.com",search_url="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term="):
+    def __init__(self,term,field="title",filter=None,tool="my_tool",email="my_email@example.com",search_url="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term="):
         
         self.term=term.strip()
+        self.filter=''        
         self.field=field.strip().lower()
         self.tool=tool.strip()
         self.email=email.strip()
         self.search_url=search_url.strip()
-        
+
+        if(filter!=None):
+            if(filter[0]=="PublicationDate"):
+                formerDate=filter[1].split("/")
+                laterDate=filter[2].split("/")
+                self.filter=f'AND%20"{formerDate[0]}%2F{formerDate[1]}%2F{formerDate[2]}"%5BPublication+Date%5D+%3A+"{laterDate[0]}%2F{laterDate[1]}%2F{laterDate[2]}"%5BPublication+Date%5D'              
 
     def url(self):
         print("Assembling url")
-        print(f"""{self.search_url}{self.term.replace(" ","+")}%5B{self.field}%5D&tool={self.tool}&email={self.email}""")
-        return f"""{self.search_url}{self.term.replace(" ","+")}%5B{self.field}%5D&tool={self.tool}&email={self.email}"""                            
+        print(f"""{self.search_url}{self.term.replace(" ","+")}%5B{self.field}%5D{self.filter}&tool={self.tool}&email={self.email}""")
+        return f"""{self.search_url}{self.term.replace(" ","+")}%5B{self.field}%5D{self.filter}&tool={self.tool}&email={self.email}"""                            
     def response(self):
         print("Making request")
         return requests.get(self.url())        
@@ -76,6 +82,7 @@ class Fetch():
         return json.loads(self.toJson())
     def get(self,id,*args):
         print("Retrieving document data")
+        stringData=str(self.response().content)
         data=self.toDict()["pmc-articleset"]["article"]        
         fieldDict= {
             "id":id,
@@ -86,7 +93,7 @@ class Fetch():
             if arg == "all":
                 try:
                     fieldDict["journal-title"]=data["front"]["journal-meta"]["journal-title-group"]["journal-title"]                    
-                    print(f"journal-title data retrieved")
+                    print(f"journal-title data retrieved (first method)")
                 except Exception as e:
                     fieldDict["journal-title"]="notFound"
                     print(f"Error in '{arg}' search ",e)
@@ -95,47 +102,81 @@ class Fetch():
                     for ids in data["front"]["article-meta"]["article-id"]:
                             if ids["@pub-id-type"]=="doi":
                                 fieldDict["doi"]=ids["#text"]
-                                print(f"doi data retrieved")
+                                print(f"doi data retrieved (first method)")
                 except Exception as e:
                     fieldDict["doi"]="notFound"
-                    print(f"Error in '{arg}' search ",e)
+                    print(f"Error in '{arg}' search ",e)                    
                  
                 try:
                     for ids in data["front"]["article-meta"]["article-id"]:
                             if ids["@pub-id-type"]=="pmc":
                                 fieldDict["pmc"]=ids["#text"]
-                                print(f"pmc data retrieved")
+                                print(f"pmc data retrieved (first method)")
                 except Exception as e:
                     fieldDict["pmc"]="notFound"
                     print(f"Error in '{arg}' search ",e)
             
                 try:
                     fieldDict["title"]=data["front"]["article-meta"]["title-group"]["article-title"]
-                    print(f"title data retrieved")
+                    print(f"title data retrieved (first method)")
                 except Exception as e:
                     fieldDict["title"]="notFound"
                     print(f"Error in '{arg}' search ",e)
            
                 try:                    
                     fieldDict["date"]=data["front"]["article-meta"]["pub-date"][0]
-                    print(f"date data retrieved")
+                    print(f"date data retrieved (first method)")
                 except Exception as e:
                     fieldDict["date"]="notFound"
-                    print(f"Error in '{arg}' search ",e)
-            
+                    print(f"Error in date search (first method)",e)
+                    try:
+                        fieldDict["date"]=data["front"]["article-meta"]["pub-date"]
+                        print(f"date data retrieved (second method)")
+                    except Exception as e:                        
+                        print(f"Error in date search (second method)",e)
+                        try:
+                            slice=re.split("pub-date",stringData)
+                            fieldDict["date"]=slice[1]
+                            print(f"date data retrieved (third method)")
+                        except Exception as e:
+                            fieldDict["date"]="notFound"
+                            print(f"Error in date search (third method)",e)            
                 try:
                     fieldDict["abstract"]=data["front"]["article-meta"]["abstract"]["p"]["#text"]
-                    print(f"abstract data retrieved")
-                except Exception as e:
-                    fieldDict["abstract"]="notFound"
-                    print(f"Error in '{arg}' search ",e)
-           
+                    print(f"abstract data retrieved (first method)")
+                except Exception as e:                    
+                    print(f"Error in abstract search (first method)",e)
+                    try:
+                        fieldDict["abstract"]=data["front"]["article-meta"]["abstract"]["sec"]
+                        print(f"abstract data retrieved (second method)")
+                    except Exception as e:                        
+                        print(f"Error in abstract search (second method)",e) 
+                        try:
+                            slice=re.split("abstract",stringData)[1][3:-3]
+                            components=re.split("<sec>",slice)
+                            fieldDict["abstract"]=components
+                            print(f"abstract data retrieved (third method)")
+                        except Exception as e:                        
+                            print(f"Error in abstract search (third method)",e) 
+                            fieldDict["abstract"]="notFound"
+
                 try:
                     fieldDict["keywords"]=data["front"]["article-meta"]["kwd-group"]["kwd"]
-                    print(f"keywords data retrieved")
+                    print(f"keywords data retrieved (first method)")
                 except Exception as e:
-                    fieldDict["keywords"]="notFound"
-                    print(f"Error in '{arg}' search ",e)
+                    print(f"Error in keywords search (first method)",e)
+                    try:
+                        fieldDict["keywords"]=data["front"]["article-meta"]["kwd-group"][0]["kwd"]
+                        print(f"keywords data retrieved (second method)")
+                    except Exception as e:
+                        print(f"Error in keywords search (second method)",e)
+                        try:
+                            slice=re.split("kwd-group",stringData)
+                            fieldDict["keywords"]=slice[1]
+                            print(f"keywords data retrieved (third method)")
+                        except Exception as e:
+                            fieldDict["keywords"]="notFound"
+                            print(f"Error in keywords search (third method)",e)
 
                 return fieldDict 
             #--- JOURNAL TITLE ---#
@@ -206,6 +247,4 @@ class Fetch():
                     print(f"Error in '{arg}' search ",e)
         
         return fieldDict
-
-
-
+    
