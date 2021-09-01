@@ -6,7 +6,7 @@ from datetime import datetime
 
 class Search():
     
-    def __init__(self,term,field="title",filter=None,tool="my_tool",email="my_email@example.com",search_url="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term="):
+    def __init__(self,term,splitTerm=False,field="title",filter=None,tool="my_tool",email="my_email@example.com",search_url="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term="):
         
         self.term=term.strip()
         self.filter=''        
@@ -14,6 +14,9 @@ class Search():
         self.tool=tool.strip()
         self.email=email.strip()
         self.search_url=search_url.strip()
+
+        if(splitTerm):
+            self.term=self.term.replace(" ",f"%5B{field}%5DAND%20")
 
         if(filter!=None):
             if(filter[0]=="PublicationDate"):
